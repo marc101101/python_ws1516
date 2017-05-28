@@ -54,7 +54,7 @@ def read_CSV_Data():
 
 		if not table_Already_Existent:                                                                          # Whenever the table has not been found, recreate it
 			print "Crime data for year " + str(i) + " does not exist yet - generating tables now."
-			csv_Loaded_File = pandas.read_csv('..\datasets\Crimes_-_' + str(i) +'.csv')                             # Load the actual csv file
+			csv_Loaded_File = pandas.read_csv('../datasets/Crimes_-_' + str(i) +'.csv')                             # Load the actual csv file
 			process_CSV_Data(i)                                                                                  # And process its content to be written into the database
 			reset_Data_Counter()                                # (re)sets initial values for correct counting of data files
 
