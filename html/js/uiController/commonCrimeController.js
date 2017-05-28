@@ -15,7 +15,7 @@ mainController.commonCrimeController = (function () {
         chartType = "column",
         selectedYear = 2001,
         topic = "commonCrime",
-        urlRequest = window.location.origin + ":5000/" + topic,
+        urlRequest = "http://0.0.0.0" + ":5000/" + topic,
 
         _createSelectField = function (array, nameSelection) {
             var selectList = document.getElementById(topic + nameSelection),

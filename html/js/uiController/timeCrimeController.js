@@ -13,7 +13,7 @@ mainController.timeCrimeController = (function () {
         data = null,
         selectedYear = 2001,
         topic = "timeCrime",
-        urlRequest = window.location.origin + ":5000/" +topic,
+        urlRequest = "http://0.0.0.0" + ":5000/" +topic,
 
         _initView = function (data) {
             timeCrimeView = mainController.timeCrimeView.init(data);
